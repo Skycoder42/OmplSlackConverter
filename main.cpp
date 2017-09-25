@@ -3,6 +3,7 @@
 #include <iostream>
 #include "iconverter.h"
 #include "opmltoslackconverter.h"
+#include "slacktoomplconverter.h"
 
 int main(int argc, char *argv[])
 {
@@ -27,7 +28,7 @@ int main(int argc, char *argv[])
 	if(parser.value("m") == "slack")
 		converter = new OpmlToSlackConverter(&a);
 	else if(parser.value("m") == "opml")
-		converter = nullptr;
+		converter = new SlackToOmplConverter(&a);
 	else
 		parser.showHelp(EXIT_FAILURE);
 

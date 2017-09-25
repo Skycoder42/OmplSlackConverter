@@ -11,8 +11,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     iconverter.cpp \
-    opmltoslackconverter.cpp
+    opmltoslackconverter.cpp \
+    slacktoomplconverter.cpp
 
 HEADERS += \
     iconverter.h \
-    opmltoslackconverter.h
+    opmltoslackconverter.h \
+    slacktoomplconverter.h
